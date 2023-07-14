@@ -1,0 +1,166 @@
+.onnetsystems-body{
+    overflow: hidden;
+
+    
+}
+
+.onnetsystems-container {
+    display: flex;
+    justify-content: flex-end;
+    height: 100vh;
+    align-items: center;
+    background-image: url('../login/loginBG.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+  
+.onnetsystems-box {
+    background-color: white;
+    width: 23%;
+    border-radius: 12px;
+    padding: 20px;
+    height: 60%;
+    margin: 0 12.5%;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+.onnetsystems-heading {
+    text-align: center;
+    height: 60%;
+    p {
+        font-family: "Segoe UI Light";
+    }
+    p:nth-child(2) {
+        font-size: larger;
+    }
+    p:nth-child(3) {
+        color: #205aca;
+    }
+}
+
+.onnetsystems-logomg {
+    width: 100%;
+    height: 70%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      width: -moz-fit-content;
+      width: fit-content;
+      height: 90%;
+    }
+    
+}
+
+.onnetsystems-formContainer {
+    input {
+      width: 100%;
+      padding: 5px;
+      border: 2px solid #205aca;
+      border-radius: 5px;
+      margin: 5px 0;
+      background-color: white;
+    }
+    p {
+      text-align: right;
+      font-size: smaller;
+      font-style: italic;
+      margin: 5px 0;
+      cursor: pointer;
+    }
+    button {
+      cursor: pointer;
+      width: 100%;
+      padding: 5px;
+      border-radius: 5px;
+      border: none;
+      background-color: #205aca;
+      color: white;
+      margin: 20px 0;
+    }
+  }
+  .onnetsystems-troubleDialog {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(5px);
+  }
+  .onnetsystems-dBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    width: 30vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    h3,
+    h5 {
+      font-family: "Segoe UI Light", Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .onnetsystems-content {
+      height: 60%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    h5 {
+      cursor: pointer;
+    }
+  }
+  .onnetsystems-loading-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .onnetsystems-loading-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #205aca;
+    margin: 20px 5px;
+    opacity: 0.2;
+    animation-name: dot-animation;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+  
+  .onnetsystems-loading-dot:nth-child(1) {
+    animation-delay: 0s;
+  }
+  
+  .onnetsystems-loading-dot:nth-child(2) {
+    animation-delay: 0.5s;
+  }
+  
+  .onnetsystems-loading-dot:nth-child(3) {
+    animation-delay: 1s;
+  }
+  
+  @keyframes dot-animation {
+    0% {
+      opacity: 0.2;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0.2;
+    }
+  }
+  
